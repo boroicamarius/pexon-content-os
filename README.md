@@ -440,6 +440,7 @@ pexon/
 | [CHANGELOG.md](CHANGELOG.md) | What changed in v0.2 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to preserve the architecture |
 | [SECURITY.md](SECURITY.md) | How to report a vulnerability |
+| [GITHUB_SETUP.md](docs/GITHUB_SETUP.md) | How to publish this local repo and set the social preview |
 
 ---
 
