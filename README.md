@@ -381,7 +381,8 @@ pexon/
 │   ├── ROADMAP.md                 # what comes after the prototype
 │   ├── assets/
 │   │   ├── architecture.svg/.png
-│   │   └── funnel.svg/.png
+│   │   ├── funnel.svg/.png
+│   │   └── social-card.svg/.png
 │   └── adr/                       # architecture decision records
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
