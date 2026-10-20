@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="funnelTitle funnelDesc">
+  <title id="funnelTitle">Pexon business funnel</title>
+  <desc id="funnelDesc">Impressions flow to clicks, leads, qualified leads, clients and won value. Each stage has a declared data source and a report field.</desc>
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8F9FD"/>
+      <stop offset="1" stop-color="#EFF2F8"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6BFF"/>
+      <stop offset="0.55" stop-color="#7C5CFC"/>
+      <stop offset="1" stop-color="#0FB5A6"/>
+    </linearGradient>
+    <marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A1A9BA"/>
+    </marker>
+    <style>
+      .t { font-family: Inter, SF Pro Display, Segoe UI, sans-serif; font-size: 38px; font-weight: 800; letter-spacing: -1px; fill: #0B1220; }
+      .s { font-family: Inter, Segoe UI, sans-serif; font-size: 15px; fill: #5B6475; }
+      .h { font-family: Inter, Segoe UI, sans-serif; font-size: 19px; font-weight: 700; fill: #0B1220; }
+      .l { font-family: Inter, Segoe UI, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 1.8px; fill: #8B93A5; }
+      .m { font-family: SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; fill: #5B6475; }
+      .w { fill: #FFFFFF; font-family: Inter, Segoe UI, sans-serif; font-size: 13px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="1200" height="680" fill="url(#fbg)"/>
+  <text x="50" y="62" class="t">From search answer to consulting client</text>
+  <text x="50" y="92" class="s">The evidence chain the CEO can actually interrogate. Each stage has one owner and one report field.</text>
+
+  <!-- funnel bars -->
+  <g>
+    <rect x="50" y="132" width="900" height="66" rx="14" fill="url(#bar)" opacity="0.95"/>
+    <text x="76" y="172" class="w" font-size="18">IMPRESSIONS</text>
+    <text x="895" y="172" text-anchor="end" class="w">GSC · Plausible · Matomo · CSV</text>
+
+    <rect x="70" y="212" width="760" height="66" rx="14" fill="#3D6FEF" opacity="0.92"/>
+    <text x="96" y="252" class="w" font-size="18">CLICKS</text>
+    <text x="775" y="252" text-anchor="end" class="w">page-level analytics</text>
+
+    <rect x="90" y="292" width="620" height="66" rx="14" fill="#5D64E8" opacity="0.92"/>
+    <text x="116" y="332" class="w" font-size="18">LEADS</text>
+    <text x="655" y="332" text-anchor="end" class="w">CRM · CSV / HubSpot</text>
+
+    <rect x="110" y="372" width="480" height="66" rx="14" fill="#7C5CFC" opacity="0.9"/>
+    <text x="136" y="412" class="w" font-size="18">QUALIFIED LEADS</text>
+    <text x="535" y="412" text-anchor="end" class="w">lifecycle + qualification</text>
+
+    <rect x="130" y="452" width="340" height="66" rx="14" fill="#119F95" opacity="0.9"/>
+    <text x="156" y="492" class="w" font-size="18">CLIENTS</text>
+    <text x="415" y="492" text-anchor="end" class="w">won accounts</text>
+
+    <rect x="150" y="532" width="220" height="58" rx="14" fill="#0B1220"/>
+    <text x="176" y="568" class="w" font-size="17">WON VALUE</text>
+    <text x="340" y="568" text-anchor="end" class="w">currency</text>
+  </g>
+
+  <!-- connectors -->
+  <line x1="1000" y1="165" x2="1090" y2="165" stroke="#A1A9BA" stroke-width="1.8" marker-end="url(#fa)"/>
+  <text x="1025" y="152" class="m">FunnelReport</text>
+
+  <!-- right rail -->
+  <rect x="1010" y="212" width="140" height="106" rx="16" fill="#FFFFFF" stroke="#E4E8F1"/>
+  <text x="1030" y="242" class="l">GEO</text>
+  <text x="1030" y="266" class="h">AI answers</text>
+  <text x="1030" y="288" class="m">mentions</text>
+  <text x="1030" y="305" class="m">citations</text>
+
+  <rect x="1010" y="334" width="140" height="106" rx="16" fill="#FFFFFF" stroke="#E4E8F1"/>
+  <text x="1030" y="364" class="l">COST</text>
+  <text x="1030" y="388" class="h">Unit economics</text>
+  <text x="1030" y="410" class="m">/lead</text>
+  <text x="1030" y="427" class="m">/client</text>
+
+  <!-- bottom statement -->
+  <rect x="50" y="606" width="1100" height="1" fill="#DDE2ED"/>
+  <text x="50" y="634" class="s">Pexon does not invent these numbers. With an empty CSV or missing GEO key, the report says so and the metric stays unmeasured.</text>
+  <text x="1150" y="658" text-anchor="end" class="m">observational evidence → holdout next</text>
+</svg>

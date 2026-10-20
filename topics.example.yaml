@@ -1,0 +1,11 @@
+topics:
+  - name: "Claude Anthropic Governance für deutsche Banken"
+    segment: "universalbank"
+    target_keyword: "claude anthropic governance banken"
+    cluster: "governance"
+    funnel_stage: "middle"
+  - name: "LoRA-Fine-Tuning für Banken: Chancen und Grenzen"
+    segment: "universalbank"
+    target_keyword: "lora fine-tuning banken"
+    cluster: "generative-ai"
+    funnel_stage: "top"

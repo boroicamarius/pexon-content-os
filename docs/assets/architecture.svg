@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Pexon architecture</title>
+  <desc id="desc">Four LangGraph content frames feed a measurement plane of analytics, CRM, GEO and cost data, producing funnel, visibility and economics reports. Governance and a provider registry sit underneath.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8F9FD"/>
+      <stop offset="1" stop-color="#EEF1F8"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F6BFF"/>
+      <stop offset="1" stop-color="#7C5CFC"/>
+    </linearGradient>
+    <linearGradient id="measure" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0FB5A6"/>
+      <stop offset="1" stop-color="#2F6BFF"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#E7EAF3" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0B1220" flood-opacity="0.07"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A1A9BA"/>
+    </marker>
+    <style>
+      .ink { fill: #0B1220; }
+      .muted { fill: #5B6475; }
+      .faint { fill: #8B93A5; }
+      .white { fill: #FFFFFF; }
+      .card { fill: #FFFFFF; stroke: #E4E8F1; stroke-width: 1.5; }
+      .frame-title { font-family: Inter, SF Pro Display, Segoe UI, sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -0.4px; }
+      .title { font-family: Inter, SF Pro Display, Segoe UI, sans-serif; font-size: 44px; font-weight: 800; letter-spacing: -1.4px; }
+      .subtitle { font-family: Inter, SF Pro Text, Segoe UI, sans-serif; font-size: 17px; font-weight: 450; }
+      .eyebrow { font-family: Inter, SF Pro Text, Segoe UI, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 2.2px; }
+      .body { font-family: Inter, SF Pro Text, Segoe UI, sans-serif; font-size: 14px; font-weight: 450; }
+      .small { font-family: Inter, SF Pro Text, Segoe UI, sans-serif; font-size: 12px; font-weight: 450; }
+      .chip { font-family: Inter, SF Pro Text, Segoe UI, sans-serif; font-size: 12px; font-weight: 700; }
+      .mono { font-family: SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)" opacity="0.55"/>
+
+  <!-- header -->
+  <rect x="50" y="28" width="66" height="66" rx="18" fill="url(#brand)" filter="url(#shadow)"/>
+  <text x="83" y="74" text-anchor="middle" font-family="Inter, Segoe UI, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">P</text>
+  <text x="136" y="66" class="title ink">Pexon</text>
+  <text x="137" y="92" class="subtitle muted">The content operating system for German bank AI consulting.</text>
+  <rect x="1240" y="38" width="310" height="42" rx="21" fill="#0B1220"/>
+  <text x="1395" y="64" text-anchor="middle" class="chip" fill="#FFFFFF">v0.2 · CLOSED-LOOP MEASUREMENT</text>
+  <text x="50" y="126" class="small faint">LangGraph orchestration · Pydantic value objects · SQLite checkpoints · 12 ports · 33 adapters</text>
+  <line x1="50" y1="142" x2="1550" y2="142" stroke="#DDE2ED" stroke-width="1.5"/>
+
+  <!-- content engine label -->
+  <text x="50" y="178" class="eyebrow" fill="#2F6BFF">01 / CONTENT ENGINE</text>
+  <text x="1550" y="178" text-anchor="end" class="small faint">one checkpointed graph · four named subgraphs</text>
+
+  <!-- frame 1 -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="198" width="330" height="218" rx="20" class="card"/>
+  </g>
+  <circle cx="84" cy="234" r="18" fill="#EEF3FF"/>
+  <circle cx="84" cy="230" r="6.5" fill="none" stroke="#2F6BFF" stroke-width="2.4"/>
+  <line x1="89" y1="235" x2="94" y2="240" stroke="#2F6BFF" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="116" y="240" class="frame-title ink">Research</text>
+  <text x="116" y="262" class="small muted">Deep research → verified truth</text>
+  <text x="74" y="294" class="body muted">• 4 parallel German searches</text>
+  <text x="74" y="318" class="body muted">• fetch + sanitize top sources</text>
+  <text x="74" y="342" class="body muted">• per-fact judge verification</text>
+  <rect x="74" y="366" width="112" height="28" rx="14" fill="#EEF3FF"/>
+  <text x="130" y="384" text-anchor="middle" class="chip" fill="#2F6BFF">GROUND TRUTH</text>
+
+  <!-- frame 2 -->
+  <g filter="url(#shadow)">
+    <rect x="420" y="198" width="330" height="218" rx="20" class="card"/>
+  </g>
+  <circle cx="454" cy="234" r="18" fill="#EAFBF8"/>
+  <rect x="447" y="235" width="4" height="10" rx="1" fill="#0FB5A6"/>
+  <rect x="454" y="228" width="4" height="17" rx="1" fill="#0FB5A6"/>
+  <rect x="461" y="239" width="4" height="6" rx="1" fill="#0FB5A6"/>
+  <text x="486" y="240" class="frame-title ink">Intelligence</text>
+  <text x="486" y="262" class="small muted">SERP + GEO → weights</text>
+  <text x="444" y="294" class="body muted">• SERP + engine visibility</text>
+  <text x="444" y="318" class="body muted">• page feature extraction</text>
+  <text x="444" y="342" class="body muted">• champion–challenger learner</text>
+  <rect x="444" y="366" width="122" height="28" rx="14" fill="#EAFBF8"/>
+  <text x="505" y="384" text-anchor="middle" class="chip" fill="#0A8C80">MODEL WEIGHTS</text>
+
+  <!-- frame 3 -->
+  <g filter="url(#shadow)">
+    <rect x="790" y="198" width="330" height="218" rx="20" class="card"/>
+  </g>
+  <circle cx="824" cy="234" r="18" fill="#F4F0FF"/>
+  <path d="M824 224 L827 231 L834 234 L827 237 L824 244 L821 237 L814 234 L821 231 Z" fill="#7C5CFC"/>
+  <text x="856" y="240" class="frame-title ink">Generation</text>
+  <text x="856" y="262" class="small muted">Direction → ranked samples</text>
+  <text x="814" y="294" class="body muted">• German title + direction</text>
+  <text x="814" y="318" class="body muted">• Send fan-out · N angles</text>
+  <text x="814" y="342" class="body muted">• refine → re-rank → gate</text>
+  <rect x="814" y="366" width="92" height="28" rx="14" fill="#F4F0FF"/>
+  <text x="860" y="384" text-anchor="middle" class="chip" fill="#6A4BE8">BLOG</text>
+
+  <!-- frame 4 -->
+  <g filter="url(#shadow)">
+    <rect x="1160" y="198" width="390" height="218" rx="20" class="card"/>
+  </g>
+  <circle cx="1194" cy="234" r="18" fill="#FFF7E8"/>
+  <path d="M1186 238 A9 9 0 1 1 1191 243" fill="none" stroke="#D38A05" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M1184 231 L1186 239 L1194 237" fill="none" stroke="#D38A05" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1226" y="240" class="frame-title ink">Reflection</text>
+  <text x="1226" y="262" class="small muted">Publish → measure → improve</text>
+  <text x="1184" y="294" class="body muted">• SEO + CMS publish or stage</text>
+  <text x="1184" y="318" class="body muted">• analytics + CRM + real GEO</text>
+  <text x="1184" y="342" class="body muted">• propose → mutate prompt → update</text>
+  <rect x="1184" y="366" width="172" height="28" rx="14" fill="#FFF7E8"/>
+  <text x="1270" y="384" text-anchor="middle" class="chip" fill="#A86900">FEEDBACK INTO THE ENGINE</text>
+
+  <!-- frame arrows -->
+  <line x1="384" y1="307" x2="414" y2="307" stroke="#A1A9BA" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="754" y1="307" x2="784" y2="307" stroke="#A1A9BA" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1124" y1="307" x2="1154" y2="307" stroke="#A1A9BA" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- measurement plane -->
+  <text x="50" y="470" class="eyebrow" fill="#0A8C80">02 / EVIDENCE PLANE</text>
+  <text x="1550" y="470" text-anchor="end" class="small faint">every report is persisted, attributed and auditable</text>
+  <rect x="50" y="488" width="1500" height="252" rx="22" fill="#FFFFFF" opacity="0.62" stroke="#DDE2ED" stroke-width="1.2"/>
+
+  <!-- data sources -->
+  <rect x="74" y="514" width="220" height="92" rx="14" fill="#F8FAFF" stroke="#E4E8F1"/>
+  <text x="94" y="544" class="chip" fill="#2F6BFF">ANALYTICS</text>
+  <text x="94" y="568" class="small muted">GSC · Plausible · Matomo · CSV</text>
+  <text x="94" y="588" class="small faint">clicks · impressions · position</text>
+
+  <rect x="314" y="514" width="220" height="92" rx="14" fill="#F8FAFF" stroke="#E4E8F1"/>
+  <text x="334" y="544" class="chip" fill="#6A4BE8">CRM</text>
+  <text x="334" y="568" class="small muted">HubSpot · CSV</text>
+  <text x="334" y="588" class="small faint">leads · pipeline · clients</text>
+
+  <rect x="554" y="514" width="220" height="92" rx="14" fill="#F8FAFF" stroke="#E4E8F1"/>
+  <text x="574" y="544" class="chip" fill="#0A8C80">GEO</text>
+  <text x="574" y="568" class="small muted">Perplexity · OpenAI · Gemini</text>
+  <text x="574" y="588" class="small faint">brand mentions · citations</text>
+
+  <rect x="794" y="514" width="220" height="92" rx="14" fill="#F8FAFF" stroke="#E4E8F1"/>
+  <text x="814" y="544" class="chip" fill="#A86900">COST</text>
+  <text x="814" y="568" class="small muted">tokens · searches · fetches</text>
+  <text x="814" y="588" class="small faint">cost per lead and client</text>
+
+  <!-- bus lines -->
+  <path d="M184 606 L184 630 L1004 630" fill="none" stroke="#B8C1D4" stroke-width="1.8"/>
+  <path d="M424 606 L424 630" fill="none" stroke="#B8C1D4" stroke-width="1.8"/>
+  <path d="M664 606 L664 630" fill="none" stroke="#B8C1D4" stroke-width="1.8"/>
+  <path d="M904 606 L904 630" fill="none" stroke="#B8C1D4" stroke-width="1.8"/>
+  <line x1="1004" y1="630" x2="1034" y2="630" stroke="#B8C1D4" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- output panel -->
+  <rect x="1034" y="500" width="492" height="222" rx="18" fill="#0B1220"/>
+  <text x="1060" y="532" class="eyebrow" fill="#8EA8FF">REPORT NODE</text>
+  <text x="1060" y="560" class="frame-title" fill="#FFFFFF">One run. Three truths.</text>
+  <rect x="1060" y="578" width="196" height="34" rx="10" fill="#162238"/>
+  <text x="1076" y="600" class="chip" fill="#DCE4FF">FunnelReport</text>
+  <text x="1270" y="600" class="small" fill="#AAB6D0">leads → clients</text>
+  <rect x="1060" y="622" width="196" height="34" rx="10" fill="#162238"/>
+  <text x="1076" y="644" class="chip" fill="#DCE4FF">GeoReport</text>
+  <text x="1270" y="644" class="small" fill="#AAB6D0">mentions → citations</text>
+  <rect x="1060" y="666" width="196" height="34" rx="10" fill="#162238"/>
+  <text x="1076" y="688" class="chip" fill="#DCE4FF">EconomicsReport</text>
+  <text x="1270" y="688" class="small" fill="#AAB6D0">cost → paid client</text>
+  <text x="1060" y="714" class="small" fill="#8793AD">Observational evidence; causal holdout is the next step.</text>
+
+  <!-- governance and registry -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="776" width="720" height="174" rx="20" class="card"/>
+  </g>
+  <text x="76" y="810" class="eyebrow" fill="#2F6BFF">03 / GUARDRAILS</text>
+  <text x="76" y="842" class="frame-title ink">Designed for bank constraints</text>
+  <text x="76" y="872" class="body muted">PII redaction before every LLM call · HTML and injection sanitization</text>
+  <text x="76" y="896" class="body muted">German detection · factuality + compliance judge · duplicate cosine gate</text>
+  <text x="76" y="920" class="body muted">Optional human review · append-only audit events · SQLite replay</text>
+  <rect x="564" y="802" width="180" height="34" rx="17" fill="#EEF3FF"/>
+  <text x="654" y="823" text-anchor="middle" class="chip" fill="#2F6BFF">4 QUALITY LAYERS</text>
+
+  <g filter="url(#shadow)">
+    <rect x="800" y="776" width="750" height="174" rx="20" class="card"/>
+  </g>
+  <text x="826" y="810" class="eyebrow" fill="#6A4BE8">04 / FLEXIBILITY CONTRACT</text>
+  <text x="826" y="842" class="frame-title ink">One registry. Any perimeter.</text>
+  <text x="826" y="870" class="body muted">Services import ports, never providers. A new provider is one adapter file and one registry line.</text>
+  <text x="826" y="898" class="mono" fill="#5B6475">LLM 3   ·  SEARCH 4  ·  FETCH 3  ·  EMBEDDINGS 2  ·  ANALYTICS 4  ·  CRM 2</text>
+  <text x="826" y="924" class="mono" fill="#5B6475">GEO 4   ·  KEYWORDS 2 ·  PUBLISHING 3 ·  STORAGE 2 ·  CACHE 2 ·  TRACING 2</text>
+  <rect x="1262" y="894" width="260" height="32" rx="16" fill="#F4F0FF"/>
+  <text x="1392" y="914" text-anchor="middle" class="chip" fill="#6A4BE8">OLLAMA ⇄ ANTHROPIC ⇄ vLLM</text>
+
+  <text x="50" y="982" class="small faint">Pexon · prototype for German bank AI content portfolios · no fabricated analytics, no fabricated GEO, no hidden provider lock-in</text>
+  <text x="1550" y="982" text-anchor="end" class="mono" fill="#8B93A5">Pexon · architecture v0.2</text>
+</svg>

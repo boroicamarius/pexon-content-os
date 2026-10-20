@@ -1,0 +1,95 @@
+# ==========================================================
+# SECRETS — never commit
+# ==========================================================
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+!.env.example
+secrets/
+*.pem
+*.key
+!**/test_*.pem
+service-account*.json
+*-credentials.json
+
+# ==========================================================
+# PYTHON
+# ==========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+.uvcache/
+uv.lock
+
+# ==========================================================
+# TESTING / COVERAGE
+# ==========================================================
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# ==========================================================
+# TYPING / LINTING CACHES
+# ==========================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# ==========================================================
+# RUNTIME DATA (generated artifacts, not source)
+# ==========================================================
+data/*
+!data/analytics.csv
+!data/leads.csv
+!data/keyword_demand.csv
+!data/.gitkeep
+models/*.pkl
+models/*.joblib
+*.log
+logs/
+
+# Runtime cache contents are disposable; keep the directory.
+.cache/*
+!.cache/.gitkeep
+
+# Generated article bodies are deliverables only when committed intentionally.
+# content/posts/*.md
+content/pending/*.md
+!content/pending/.gitkeep
+
+# ==========================================================
+# IDE / OS
+# ==========================================================
+.idea/
+.vscode/
+!.vscode/settings.json.example
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ==========================================================
+# DOCKER / LOCAL INFRA
+# ==========================================================
+.docker/
+pgdata/
+redisdata/
+langfusedata/
