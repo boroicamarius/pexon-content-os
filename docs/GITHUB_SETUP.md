@@ -3,12 +3,23 @@
 The local repository is already initialised on `main` with commits. This guide adds the
 GitHub presentation layer; no external upload is performed by the code.
 
-## 1. Create the remote
+## 1. Rename or create the repository
 
-Create an empty repository on GitHub, then:
+The public repository name is **`pexon-content-os`**.
+
+If the repository already exists under an older name, rename it first in GitHub
+Settings → General → Repository name, or with the GitHub CLI:
 
 ```bash
-git remote add origin git@github.com:YOUR_ORG/pexon.git
+gh repo rename pexon-content-os
+```
+
+Then point the local remote at it. If `origin` already exists, update it; otherwise add it:
+
+```bash
+git remote set-url origin git@github.com:YOUR_ORG/pexon-content-os.git
+# or: git remote add origin git@github.com:YOUR_ORG/pexon-content-os.git
+
 git branch -M main
 git push -u origin main
 ```
@@ -19,7 +30,7 @@ Do not add a README, license or `.gitignore` in the GitHub UI; they are already 
 
 Use:
 
-> Pexon — closed-loop content operating system for German bank AI consulting.
+> Pexon Content OS — closed-loop content operating system for German bank AI consulting.
 
 ## 3. Topics
 

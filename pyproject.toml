@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "pexon"
 version = "0.2.0"
-description = "Closed-loop content operating system for German bank AI consulting"
+description = "Pexon Content OS — closed-loop content operating system for German bank AI consulting"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Proprietary" }

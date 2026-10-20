@@ -4,6 +4,10 @@ All notable changes to this prototype are recorded here.
 
 ## [0.2.0] — 2026-10-21
 
+### Repository identity
+
+- Public repository renamed to **`pexon-content-os`** (product remains Pexon).
+
 ### Added — measurement layer
 
 - `CrmPort` with CSV and HubSpot adapters.

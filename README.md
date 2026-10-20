@@ -4,10 +4,11 @@
   </a>
 </p>
 
-<h1 align="center">Pexon</h1>
+<h1 align="center">Pexon Content OS</h1>
 
 <p align="center">
   <strong>The content operating system for German bank AI consulting.</strong><br>
+  <sub>Repository: <code>pexon-content-os</code></sub><br>
   Research → Intelligence → Generation → Reflection, with a closed loop from search visibility to clients.
 </p>
 
@@ -367,7 +368,7 @@ The first runs use `prior-v1`, a documented cold-start prior. Once `MIN_TRAINING
 ## Repository map
 
 ```text
-pexon/
+pexon-content-os/
 ├── README.md                      # this page
 ├── pyproject.toml                 # package + dependencies
 ├── .env.example                   # every setting, zero-key and bank profiles
