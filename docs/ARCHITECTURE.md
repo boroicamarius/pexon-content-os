@@ -3,7 +3,7 @@
 > Four frames, one checkpointed LangGraph, a provider-independent adapter layer, and a
 > measurement plane that treats business outcomes as first-class data.
 
-![Pexon architecture](assets/architecture.svg)
+![Pexon architecture](assets/architecture.png)
 
 ## 1. Design goals
 

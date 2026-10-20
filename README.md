@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="docs/assets/architecture.svg" alt="Pexon architecture: four LangGraph content frames feeding a measurement plane for analytics, CRM, GEO and unit economics" width="100%">
+  <a href="docs/assets/architecture.svg">
+    <img src="docs/assets/architecture.png" alt="Pexon architecture: four LangGraph content frames feeding a measurement plane for analytics, CRM, GEO and unit economics" width="100%">
+  </a>
 </p>
 
 <h1 align="center">Pexon</h1>
